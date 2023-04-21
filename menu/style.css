@@ -149,7 +149,7 @@ backdrop-filter: blur(8.1px);
 border: 1px solid rgba(107, 103, 103, 0.3);
     /* z-index: 700; */
     right: 0;
-    top: 90%;
+    top: 0;
     /* display: flex; */
     /* transform: translateY(90%); */
     transition: 0.3s ease;
