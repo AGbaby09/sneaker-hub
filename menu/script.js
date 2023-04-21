@@ -157,9 +157,21 @@ const section = document.querySelector('section');
 const buttonDiv = document.querySelectorAll("header ul")[0]
 
 const itemButton = document.getElementById('itemButton')
-const shader = document.getElementById('shader')
 console.log(itemButton)
+// const shader = document.getElementById('shader')
 // 
+// let parDess = document.getElementsByClassName('cartBut')[0]
+// const shader = document.getElementById('shader')
+// console.log(parDess.classList)
+// parDess.addEventListener('click', ()=>{
+//     shader.classList.toggle();
+// })
+// for(const parDes of parDess){
+//     parDes.addEventListener('click', ()=>{
+//         shader.classList.toggle('.shader1');
+//     })
+// }
+// console.log(parDess)
 
 //load items 
 window.addEventListener('DOMContentLoaded', ()=>{
@@ -167,6 +179,13 @@ window.addEventListener('DOMContentLoaded', ()=>{
     
     //set categories
     displayButtons()
+    // for (parDes in oarDess){
+    //     parDes.addEventListener('click', ()=>{
+    //         if(parDes.innerContent != 'DROP'){
+    //             parDes.innerContent == 'DROP';
+    //         }
+    //     })
+    // })
 });
 
 //display buttons
@@ -215,7 +234,7 @@ function displayItems(menuItems){
         <h4 class="title">${item.title}</h4>
         <h4 class="price">$${item.price}</h4>
         <div class='buyOpt'>
-        <button onClick=handleform >Add to Cart</button>
+        <button id='itemButton'>Add to Cart</button>
         </div>
         </div>
     </article>`;
