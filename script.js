@@ -2,7 +2,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
 
     let header = document.getElementsByTagName('header')[0]
     let main = document.getElementsByTagName('main')[0]
-    let nav = document.getElementsByTagName('nav')[0]
+    let nav = document.getElementById('homeNav')
     let square = document.getElementsByClassName('square')[0]
     let circle = document.getElementsByClassName('circle')[0]
 
@@ -23,6 +23,10 @@ window.addEventListener("DOMContentLoaded", ()=>{
     let spinner = document.getElementById('spinner')
     let section1 = document.getElementById('section1')
     let butt = document.getElementById('butt')
+    let butt1 = document.getElementById('butt1')
+    let butt2 = document.getElementById('butt2')
+    let goHome = document.getElementById('goHome')
+    let toHome = document.getElementById('toHome')
     
     setTimeout(()=>{
         headerText[0].style.transform = "translateX(0%)"
@@ -83,6 +87,15 @@ window.addEventListener("DOMContentLoaded", ()=>{
     butt.addEventListener('click', ()=>{
         section1.scrollIntoView()
         // location.reload()
+    })
+    goHome.addEventListener('click', ()=>{
+        toHome.scrollIntoView()
+        // location.reload()
+    })
+    butt2.addEventListener('click', ()=>{
+        toHome.scrollIntoView()
+        // location.reload()
+        window.location.replace("/menu/index.html");
     })
 
     
